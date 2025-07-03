@@ -1,0 +1,45 @@
+name: travel_crm
+description: Travel Agency CRM with Firebase backend
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.5  # GetX for state management
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  firebase_storage: ^11.5.6
+  firebase_messaging: ^14.7.9
+  excel: ^2.1.0  # For Excel exports
+  intl: ^0.18.1  # For date formatting
+  cached_network_image: ^3.3.0
+  file_picker: ^6.1.1  # For file uploads
+  flutter_local_notifications: ^16.2.0
+  shared_preferences: ^2.2.2  # For theme persistence
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
